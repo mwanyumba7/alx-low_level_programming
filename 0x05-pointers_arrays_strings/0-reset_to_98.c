@@ -1,5 +1,5 @@
 #include <stdio.h>
-//#include "holberton.h"
+/*#include "holberton.h"*/
 void reset_to_98(int *n);
 /**
  * main: prints an integer
@@ -12,9 +12,9 @@ int main(void)
   int n, *m;
   n = 402;
   m = &n;
-  _putchar(n);
+  putchar(n);
   reset_to_98(m);
-  _putchar(n);
+  putchar(n);
   return (0);
 }
 

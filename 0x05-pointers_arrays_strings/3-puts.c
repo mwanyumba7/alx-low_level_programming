@@ -1,33 +1,16 @@
-#include "holberton.h"
-#include <stdio.h>
-void _puts(char *str);
+#include "main.h"
 /**
- * main: prints out a tring
- * @*str: Pointer to a 
- *
- * Return: Always 0
- */
-int main(void)
-{
-  char *str;
-  str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-  _puts(str);
-  return (0);
-}
-
-/**
- * _puts: returns lenght of string
- * @*str: pointer variable of type char
- *
- * Return: 0
+ * _puts - prints a string to stdout
+ * @str: pointer to the string to print
  */
 void _puts(char *str)
-{ 
-  int c = -1;
-  while(str[c] != sizeof(str[c]))
-    {
-      c++;
-      printf("%c",str[c]);
-    }
-    
+{
+	int i;
+
+	for (i = 0; str[i] != '\0'; i++)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
+

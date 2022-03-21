@@ -1,36 +1,20 @@
-#include "holberton.h"
-#include <stdio.h>
-int _strlen(char *s);
+#include "main.h"
 /**
- * main: returns lenth of string
- * @*str: Pointer varible of type char
- * @len: length of string of type int
+ * _strlen - returns the length of a string
+ * @s: string to evaluate
  *
- * Return: Always 0
- */
-int main(void)
-{
-  char *str;
-  int len;
-
-  str = "Holberton!";
-  len = _strlen(str);
-  printf("%d\n", len);
-  return (0);
-}
-
-/**
- * _strlen: returns lenght of string
- * @*s: pointer variable of type char
- * @*c: counter variable
- *
- * Return: integer value
+ * Return: the length of the string
  */
 int _strlen(char *s)
 {
-  int c = 0;
-  while(s[c] != '\0')
-    c++;
-  return c;
-    
+	int i;
+
+	i = 0;
+
+	while (s[i] != '\0')
+	{
+		i++;
+	}
+	return (i);
 }
+
